@@ -1,3 +1,5 @@
-Digunakan untuk melimit maksimal object bisa dibuat / active karna object tersebut merupakan object 
-yang berat atau mahal sehingga jika tidak dilimit bisa membuat memory usage tinggi, 
-contohnya limit goroutine yang di spawn ketika memproses sesuatu dalam satu waktu.
+Digunakan untuk melimit maksimal object bisa dibuat / active karna object tersebut merupakan object yang berat atau mahal sehingga jika tidak dilimit bisa membuat memory usage tinggi, contohnya limit goroutine dalam memproses sesuatu dalam satu waktu 
+
+How To:
+-	Buat struct / object yang mau di pool
+-	Buat objectpool dimana memiliki field object yang sudah kita buat sebelumnya

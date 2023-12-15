@@ -1,5 +1,6 @@
-Digunakan untuk membuat suatu object hanya dengan memberi tahu factory instance apa yang perlu dibuat tanpa 
-mengetahui logic pembuatan instance tersebut.
+Digunakan untuk membuat suatu object hanya dengan memberi tahu factory instance apa yang perlu dibuat tanpa mengetahui logic pembuatan instance tersebut.
 
-Contohnya pembuatan koneksi database ke mysql / postgres, function ini bisa dibuat menggunakan factory design pattern karna
-kedua database ini bisa dilakukan koneksi menggunakan lib sqlx, dan keduanya me return tipe data yang sama yaitu *sqlx.DB
+How To:
+-	Buat interface berisi method yang akan dijalankan di factory
+-	Buat struct / object yang akan dibuat lewat factory
+-	Buat struct factory, lalu buat method untuk membuat object

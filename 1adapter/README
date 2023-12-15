@@ -1,1 +1,5 @@
-Digunakan ketika kita ingin menghubungkan 2 object yang berbeda implementasinya
+Digunakan ketika kita ingin menghubungkan 2 object yang berbeda implementasinya.
+
+How To: 
+-	Buat struct adaptee dengan fungsionalitas yang diinginkan
+-	Buat struct adapter yang mengimplementasi interface client yang ingin di adapt namun implementasi nya hanya meneruskan request ke struct adaptee

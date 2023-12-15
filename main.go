@@ -1,15 +1,15 @@
 package main
 
-import adapter "design-pattern/1adapter"
+import factory "design-pattern/7factory"
 
 func main() {
-	adapter.Run()
+	// adapter.Run()
 	// state.Run()
 	// strategy.Run()
 	// observer.Run()
 	// prototype.Run()
 	// singleton.Run()
-	// factory.Run()
+	factory.Run()
 	// objectpool.Run()
 	// builder.Run()
 	// chainofresponsibility.Run()

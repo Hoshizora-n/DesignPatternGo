@@ -1,2 +1,7 @@
-Digunakan ketika kita ingin membuat sebuah object yang kompleks, 
-object dibuat step by step sehingga lebih mudah dibaca / dimengerti dan bisa di reuse untuk membuat object yang lain
+Digunakan ketika kita ingin membuat sebuah object yang kompleks, object dibuat step by step sehingga lebih mudah dibaca / dimengerti dan bisa di reuse untuk membuat object yang lain
+
+How To:
+-	Buat struct utama dengan field field yang akan dipakai di builder
+-	Buat struct builder memiliki field struct yang sudah dibuat sebelumnya
+-	Implementasi setter pada setiap field di struct utama
+-	Implementasi method build pada struct builder yang berfungsi untuk membuild object

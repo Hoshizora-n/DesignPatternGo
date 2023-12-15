@@ -1,1 +1,5 @@
 Digunakan untuk membuat variable global, memastikan object tersebut hanya ada satu, contohnya object config
+
+How To:
+-	Buat variable global
+-	Initiate data / instance lalu assign ke variable global

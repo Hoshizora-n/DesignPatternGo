@@ -1,5 +1,9 @@
-Digunakan ketika kita memiliki multiple algorithms untuk tugas yang spesifik 
-dan client dapat menentukan implementasi mana yang mau dipakai saat runtime
+Digunakan ketika kita memiliki multiple algorithms untuk tugas yang spesifik dan client dapat menentukan implementasi mana yang mau dipakai saat runtime
 
-Struktur code nya mirip dengan state, namun ada perbedaan nya yaitu, state biasanya aware dengan keberadaan state lainnya
-bahkan biasanya ada transisi pergantian state. sedangkan strategi tidak tahu keberadaan strategi lainnya
+Struktur code nya mirip dengan state, namun ada perbedaan nya yaitu, state biasanya aware dengan keberadaan state lainnya bahkan biasanya ada transisi pergantian state. sedangkan strategi tidak tahu keberadaan strategi lainnya
+
+How To:
+-	Buat interface strategy
+-	Per strategy dibuat struct nya dan implement interface strategy
+-	Buat struct client dimana client memilikii field strategy
+-	Buat method di struct client untuk menggunakan field strategy

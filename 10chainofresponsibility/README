@@ -1,2 +1,5 @@
-Design pattern yang memungkinkan untuk suatu handler melanjutkan request ke handler berikutnya atau tidak. 
-Contoh nya seperti middleware pada REST API
+Design pattern yang memungkinkan untuk suatu handler melanjutkan request ke handler berikutnya atau tidak. Contoh nya seperti middleware pada REST API
+
+How To:
+-	Buat app rest api
+-	Buat func middleware, lalu gunakan middleware tersebut di setiap incoming request

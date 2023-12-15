@@ -1,1 +1,7 @@
-Digunakan ketika kita ingin mengubah perilaku suatu object berdasarkan state dari object tersebut.
+Digunakan ketika kita ingin mengubah perilaku suatu object sesuai state object tersebut.
+
+How To:
+-	Buat interface state
+-	Per state dibuat struct nya dan implement interface state
+-	Buat struct client dimana client memiliki field state
+-	Buat method di struct client untuk menggunakan field state

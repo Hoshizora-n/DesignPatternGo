@@ -1,2 +1,7 @@
-Digunakan ketika kita ingin memberitahu / notify object object 
-yang subscribe bahwa ada sesuatu atau update pada object utama
+Digunakan ketika kita ingin memberitahu / notify object object yang subscribe bahwa ada sesuatu atau update pada object utama
+
+How To: 
+-	Buat interface Publisher
+-	Buat interface Subscriber
+-	Buat implementasi dari publisher
+-	Buat implementasi dari subscriber

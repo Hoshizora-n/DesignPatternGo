@@ -1,2 +1,5 @@
 Digunakan ketika kita ingin membuat clone object tersebut (deepcopy)
 
+How To:
+-	Buat interface model yang ingin dibuat (pastikan ada func clone)
+-	Implementasi method clone dimana method tersebut membuat object baru dengan data dari object yang di clone

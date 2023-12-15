@@ -3,20 +3,26 @@ package factory
 import (
 	"fmt"
 	"log"
+
+	"github.com/jmoiron/sqlx"
 )
 
 type Database interface {
 	Connect() error
 }
 
-type MySQLDB struct{}
+type MySQLDB struct {
+	URL string
+}
 
 func (m *MySQLDB) Connect() error {
 	fmt.Println("Connected to MySQL database")
 	return nil
 }
 
-type PostgresDB struct{}
+type PostgresDB struct {
+	DataSource string
+}
 
 func (p *PostgresDB) Connect() error {
 	fmt.Println("Connected to PostgreSQL database")
@@ -25,12 +31,16 @@ func (p *PostgresDB) Connect() error {
 
 type DatabaseFactory struct{}
 
-func (f *DatabaseFactory) CreateDatabase(dbType string) (Database, error) {
+func (f *DatabaseFactory) CreateDatabase(dbType string) (*sqlx.DB, error) {
 	switch dbType {
 	case "mysql":
-		return &MySQLDB{}, nil
+		mysql := &MySQLDB{}
+		db, _ := sqlx.Connect("mysql", mysql.URL)
+		return db, nil
 	case "postgres":
-		return &PostgresDB{}, nil
+		postgres := &PostgresDB{}
+		db, _ := sqlx.Connect("postgres", postgres.DataSource)
+		return db, nil
 	default:
 		return nil, fmt.Errorf("unsupported database type")
 	}
@@ -39,12 +49,10 @@ func (f *DatabaseFactory) CreateDatabase(dbType string) (Database, error) {
 func Run() {
 	factory := &DatabaseFactory{}
 
-	db, err := factory.CreateDatabase("mysql")
+	_, err := factory.CreateDatabase("mysql")
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = db.Connect()
-	if err != nil {
-		log.Fatal(err)
-	}
+
+	fmt.Println("database berhasil dibuat")
 }
