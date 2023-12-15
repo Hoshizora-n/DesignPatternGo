@@ -3,5 +3,5 @@ Digunakan ketika kita ingin mengubah perilaku suatu object sesuai state object t
 How To:
 -	Buat interface state
 -	Per state dibuat struct nya dan implement interface state
--	Buat struct client dimana client memiliki field state
+-	Buat struct context / client dimana client memiliki field state
 -	Buat method di struct client untuk menggunakan field state
