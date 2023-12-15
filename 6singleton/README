@@ -2,4 +2,5 @@ Digunakan untuk membuat variable global, memastikan object tersebut hanya ada sa
 
 How To:
 -	Buat variable global
+- Buat func get variable tersebut, apabila nil create, else return yang sudah ada
 -	Initiate data / instance lalu assign ke variable global

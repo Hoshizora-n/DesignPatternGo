@@ -6,12 +6,12 @@ import (
 )
 
 func Run() {
-	err := config.LoadConfig("./6singleton")
-	if err != nil {
-		panic(err)
-	}
+	cfg := config.GetConfig()
+	cfg2 := config.GetConfig()
 
-	address := fmt.Sprintf(":%d", config.Configuration.Server.Port)
+	fmt.Println(cfg == cfg2)
+
+	address := fmt.Sprintf(":%d", cfg.Server.Port)
 	fmt.Printf("server run on port %s\n", address)
 	// http.ListenAndServe(address, nil)
 }
