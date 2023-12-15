@@ -1,0 +1,3 @@
+Digunakan untuk melimit maksimal object bisa dibuat / active karna object tersebut merupakan object 
+yang berat atau mahal sehingga jika tidak dilimit bisa membuat memory usage tinggi, 
+contohnya limit goroutine yang di spawn ketika memproses sesuatu dalam satu waktu.

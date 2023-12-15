@@ -1,0 +1,2 @@
+Design pattern yang memungkinkan untuk suatu handler melanjutkan request ke handler berikutnya atau tidak. 
+Contoh nya seperti middleware pada REST API

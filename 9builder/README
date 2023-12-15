@@ -1,0 +1,2 @@
+Digunakan ketika kita ingin membuat sebuah object yang kompleks, 
+object dibuat step by step sehingga lebih mudah dibaca / dimengerti dan bisa di reuse untuk membuat object yang lain
